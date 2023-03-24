@@ -2,12 +2,10 @@ import { observe } from "./observe/index.js";
 
 export function initState(vm){
     let opts=vm.$options
-    // console.log('%cinitState.js line:3 opts', 'color: #007acc;', opts);
     //对数据初始化处理
     if(opts.data){
         initData(vm)
     }
-
 
     function initData(vm){
         //判断data 是对象/函

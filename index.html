@@ -10,7 +10,7 @@
     </head>
     <body>
         <div id="app">
-            hello
+            {{msg.value}}
         </div>
         <script src="dist/vue.js"></script>
         <script>
@@ -24,15 +24,17 @@
                             msg:{
                                 value:'2'
                             },
-                            a:'hello'
+                            a:'hello',
+                            list:[1,23,6,5],
+                            arr:[{a:1},2]
                         }
 
                 },
                 props:{},
                 watch:{}
             })
+        
         console.log('%cindex.html line:34 vm._data', 'color: #007acc;', vm._data);
-        console.log(vm._data.a={value:33})
         </script>
      </body>
 </html>
